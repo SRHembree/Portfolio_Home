@@ -1,9 +1,19 @@
 /* <!-- Nav CSS --> */
+.container {
+    margin-right: 30px;
+    margin-left: 60px;
+}
+img {
+    border: 2;
+    color: #ECC19B;
+    border-style: solid;
+    border-radius: 10px;
+}
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .navbar-custom {
-    background-color: #709189;
+    background-color: white;
 }
 .navbar-nav .navbar-btn .nav-link {
     border-color: #E5584C;
@@ -12,22 +22,16 @@
     background-color: #3A7673;
 }
 .navbar-nav > li {
-    padding-left: 20px;
     padding-right: 20px;
     font-family: "Gill Sans",Helvetica,Arial,sans-serif;
     margin-left: 20px;
     margin-right: 20px;
-}
-.hamburgerDisplay {
-
 }
 #hamburger {
     display: none; 
 }
 .form-inline {
     font-family: "Gill Sans",Helvetica,Arial,sans-serif;
-    padding-left: 20px;
-    padding-right: 20px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -45,12 +49,6 @@ hr {
     margin-bottom: 1rem;
     border: 0;
     border-top: 1px solid #DC423C;
-}
-#backgroundCS {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    background-color: #CEDDDC;
 }
 /* Hero Image Styles */
 .mainContent {
@@ -78,15 +76,6 @@ hr {
     background-repeat: no-repeat;
     object-fit: cover;
     float: left;
-}
-.title {
-    font-family: 'Sen', sans-serif;
-    font-size: 45px;
-    text-shadow: 2px 2px #000000;
-    font-weight: bolder;
-    color: #DC423C;
-    padding: 0px 0px; 
-    position: relative;
 }
 .content p {
     padding: 0px 15px; 
@@ -148,265 +137,13 @@ hr {
     border: 1px solid black; 
     background-color: #ECC19B;
 }
-/* Skills Styles */
-.skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.skillz {
-    flex: 4;
-    margin-right: 20px;
-}
-.uiskillz {
-    flex: 4;
-    margin-right: 20px;
-}
-.codingSkillz {
-    flex: 4;
-    margin-right: 20px;
-}
-.title2 {
-    font-family: 'Sen', sans-serif;
-    font-size: 45px;
-    text-shadow: 2px 2px #000000;
-    font-weight: bolder;
-    color: #DC423C;
-    padding: 0px 0px; 
-    position: relative;
-    margin-left: auto;
-}
-table {
-    border-collapse: separate;
-    border-spacing: 15px;
-    width: 100%;
-    color: #ffffff;
-    float: left;
-    border: 1px solid #ddd;
-    font: 22px/1.4 "Gill Sans", sans-serif;
-}
-th, td {
-    text-align: center;
-    padding: 8px 12px;
-    border-bottom: 1px solid #cecfd5;
-}
-thead {
-    background: #395870;
-    color: #fff;
-}
-td {
-    border-bottom: 1px solid #cecfd5;
-    border-right: 1px solid #cecfd5;
-}
-td:first-child {
-    border-left: 1px solid #cecfd5;
-}
-/* UX Skills Section */
-#Figma {
-    background-color: #709189;
-    color: #ffffff;
-    padding: 5px;
-}
-#adobeXD {
-    background-color: #ECC19B;
-    color: #000000;
-    padding: 5px;
-}
-#Personas {
-    background-color: #ECC19B;
-    color: #000000;
-    padding: 5px;
-}
-#usabilityTesting {
-    background-color: #3A7673;
-    color: #ffffff;
-    padding: 5px;
-}
-#Wireframing {
-    background-color: #3A7673;
-    color: #ffffff;
-    padding: 5px;
-}
-#Prototyping {
-    background-color: #709189;
-    color: #ffffff;
-    padding: 5px; 
-    margin-top: 15px; 
-}
-.uxSkills {
-    padding: 10px;
-    margin: 10px;
-    background-color:none;
-    color: white;
-}
-.skillz { 
-    position: relative; 
-    display: flex;
-    padding: 10px;; 
-}
-.skillPicture {
-    width: 80%; 
-    height: 60px; 
-    position: absolute;
-    bottom: 75px; 
-    left: 10%; 
-}
-.linebreakformat {
-    width: 80%; 
-    height: 2px; 
-    position: absolute; 
-    bottom: 60px; 
-    left: 10%; 
-}
-.UXLabel {
-    position: absolute; 
-    bottom: 20px; 
-    left: 0px; 
-    width: 100%; 
-    text-align: center; 
-}
-.uxSkills img {
-height: 100%; 
-padding: 5px;
-background-repeat: no-repeat;
-border-radius: 0px;
-float: left;
-}
-.uxSkills::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-/* UI Skills Section */
-#InVision {
-    background-color: #ECC19B;
-    color: #000000;
-    padding: 5px;
-}
-#Illustrator {
-    background-color: #709189;
-    color: #ffffff;
-    padding: 5px;
-}
-#interactiveDesign {
-    background-color: #3A7673;
-    color: #ffffff;
-    padding: 5px;
-    width: flex;
-    /* margin-left: auto; 
-    margin-right: auto;  */
-}
-#styleGuide {
-    background-color: #709189;
-    color: #ffffff;
-    padding: 5px;
-}
-#Trello {
-    background-color: #ECC19B;
-    color: #000000;
-    padding: 5px;
-}
-.uiskillz { 
-    position: relative; 
-    display: flex;
-    /* padding-bottom: 50px;  */
-}
-.uiPicture {
-    width: 100%; 
-    position: absolute;
-    bottom: 0px; 
-    left: 0px; 
-    /* border: 0px; */
-    /* display: flex; */
-}
-.UILabel {
-    position: absolute; 
-    bottom: 0; 
-    left: 50%; 
-}
-.uiSkills img {
-height: 100%; 
-padding: 5px;
-background-repeat: no-repeat;
-border-radius: 0px;
-float: left;
-}
-.uiskills::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-/* FrontendCoding Skills Section */
-#HTML5 {
-    background-color: #3A7673;
-    color: #ffffff;
-    padding: 5px;
-}
-#responsiveDesign {
-    background-color: #709189;
-    color: #ffffff;
-    padding: 5px;
-}
-#javajQuery {
-    background-color: #3A7673;
-    color: #ffffff;
-    padding: 5px;
-}
-#css {
-    background-color: #ECC19B;
-    color: #000000;
-    padding: 5px;
-}
-#Github {
-    background-color: #ECC19B;
-    color: #000000;
-    padding: 5px;
-}
-#visualStudio {
-    background-color: #3A7673;
-    color: #ffffff;
-    padding: 5px;
-}
-.codingSkillz { 
-    position: relative; 
-    display: flex;
-    /* padding-bottom: 50px;  */
-}
-.codingPicture {
-    width: 100%; 
-    position: absolute;
-    bottom: 0px; 
-    left: 0px; 
-    /* border: 0px; */
-    /* display: flex; */
-}
-.frontendCodingLabel {
-    position: absolute; 
-    bottom: 0; 
-    left: 50%; 
-}
-.frontendCoding img {
-height: 100%; 
-padding: 5px;
-background-repeat: no-repeat;
-border-radius: 0px;
-float: left;
-}
-.frontendCoding::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-[class*="col-"] {
-    float: left;
-}
 /* Case Study Styles */
 * {
     box-sizing: border-box;
 }
 .takeovertheworld .title3 {
     font-family: 'Sen', sans-serif;
-    font-size: 45px;
+    font-size: 40px;
     text-shadow: 2px 2px #000000;
     font-weight: bolder;
     color: #DC423C;
@@ -417,7 +154,6 @@ float: left;
 .takeovertheworld {
     margin-left: -5px;
     margin-right: -5px;
-    /* padding-bottom: 300px;  */
     height: auto; 
     position: relative; 
 }
@@ -430,125 +166,43 @@ float: left;
     padding: 0px 15px; 
     font-family: "PT Sans";
     font-style: normal;
-    font-size: 20px;
+    font-size: 18px;
     color: #3A7673;
 }
-.covidCase {
-    width: 100%;
-    height: auto;
-    padding: 0px 15px;
-    float: left;
-    /* background-color: magenta; */
-}
-.covidCase h2 {
-    font-family: "PT Sans";
-    font-size: 20px;
-    color: #3A7673;
-}
-.covidCase p {
-    font-family: "PT Sans";
-    font-size: 18px;
-    color: #0D1D21;
-}
-.covidCase h3 {
-    font-family: "Gill Sans";
-    font-size: 18px;
-    font-style: italic;
-    color: #0D1D21;
-}
-.covidCase img {
+.codingCase, .lfpCase, .doeCase, .covidCase{
+    position: relative;
     width: 50%;
-    height: auto; 
-    padding: 5px 15px; 
-    float: left; 
+    padding-bottom: 10px;
 }
-.doeCase {
+.covidCase:hover .text {
+    opacity: 1;
+}
+.doeCase:hover .text {
+    opacity: 1;
+}
+.lfpCase:hover .text {
+    opacity: 1;
+}
+.codingCase:hover .text {
+    opacity: 1;
+}
+.codingCase img, .lfpCase img, .doeCase img, .covidCase img {
+    display: block;
+    width: 100% !important;
+}
+.text {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 1.0); /* Black see-through */
+    color: #f1f1f1; 
     width: 100%;
-    height: auto;
-    padding: 0px 15px;
-    float: left;
-    /* background-color: blueviolet; */
-}
-.doeCase h2 {
-    font-family: "PT Sans";
-    font-size: 20px;
-    color: #3A7673;
-}
-.doeCase p {
-    font-family: "PT Sans";
+    transition: .5s ease;
+    opacity:0;
+    color: white;
     font-size: 18px;
-    color: #0D1D21;
-}
-.doeCase h3 {
-    font-family: "Gill Sans";
-    font-size: 18px;
-    font-style: italic;
-    color: #0D1D21;
-}
-.doeCase img {
-    width: 50%;
-    height: auto; 
-    padding: 5px 15px; 
-    float: left; 
-}
-.lfpCase {
-    width: 100%;
-    height: auto;
-    padding: 0px 15px;
-    float: left;
-    /* background-color: yellow; */
-}
-.lfpCase h2 {
-    font-family: "PT Sans";
-    font-size: 20px;
-    color: #3A7673;
-}
-.lfpCase p {
-    font-family: "PT Sans";
-    font-size: 18px;
-    color: #0D1D21;
-}
-.lfpCase h3 {
-    font-family: "Gill Sans";
-    font-size: 18px;
-    font-style: italic;
-    color: #0D1D21;
-}
-.lfpCase img {
-    width: 50%;
-    height: auto; 
-    padding: 5px 15px; 
-    float: left; 
-}
-.codingCase {
-    width: 100%;
-    height: auto;
-    padding: 0px 15px;
-    padding-bottom: 150px; 
-    float: left;
-    /* background-color: aqua; */
-}
-.codingCase h2 {
-    font-family: "PT Sans";
-    font-size: 20px;
-    color: #3A7673;
-}
-.codingCase p {
-    font-family: "PT Sans";
-    font-size: 18px;
-    color: #0D1D21;
-}
-.codingCase h3 {
-    font-family: "Gill Sans";
-    font-size: 18px;
-    font-style: italic;
-    color: #0D1D21;
-}
-.codingCase img {
-    width: 50%;
-    height: auto; 
-    padding: 5px 15px; 
-    float: left; 
+    padding: 20px;
+    text-align: center;
 }
 /* Scroll "Back to Top" Button Style */
 #myBtn {
