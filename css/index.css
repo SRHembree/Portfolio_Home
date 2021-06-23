@@ -1,7 +1,7 @@
 /* <!-- Nav CSS --> */
 .container {
     margin-right: 30px;
-    margin-left: 60px;
+    margin-left: 30px;
 }
 img {
     border: 2;
@@ -9,17 +9,19 @@ img {
     border-style: solid;
     border-radius: 10px;
 }
+#dropdownMenuLink {
+    background-color: white;
+    color: #0D1D21 !important;
+    border-color: white;
+    align-items: center;
+    font-family: "Gill Sans",Helvetica,Arial,sans-serif;
+}
+#dropdownMenuLink:hover {
+    background-color: #E5584C;
+    color: white !important;
+}
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-.navbar-custom {
-    background-color: white;
-}
-.navbar-nav .navbar-btn .nav-link {
-    border-color: #E5584C;
-    font-family: "Gill Sans",Helvetica,Arial,sans-serif;
-    color: #fff !important;
-    background-color: #3A7673;
 }
 .navbar-nav > li {
     padding-right: 20px;
@@ -30,123 +32,38 @@ img {
 #hamburger {
     display: none; 
 }
-.form-inline {
-    font-family: "Gill Sans",Helvetica,Arial,sans-serif;
-    margin-left: 20px;
-    margin-right: 20px;
-}
 .btn-outline-success {
     background-color: #E5584C;
     border: none;
     color: white;
     cursor: pointer;
+    font-family: "Gill Sans",Helvetica,Arial,sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
 } 
 .btn-outline-success:hover {
     background-color: #0D1D21;
 }
-hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid #DC423C;
-}
-/* Hero Image Styles */
-.mainContent {
-    width: 100%;
-    height: auto; 
-    overflow: auto; 
-}
-.border {
-    margin: auto;
-    width: 100%;
-    padding: 15px 30px;
-    height: auto; 
-    background-color: #CEDDDC;
-    overflow: auto; 
-}
-.content {
-    position: relative; 
-    width: 100%; 
-    height: 50%; 
-}
-.content img {
-    height: auto; 
-    padding: 10px 15px;
-    width: 50%;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    float: left;
-}
-.content p {
-    padding: 0px 15px; 
-    font-family: "PT Sans";
-    font-style: normal;
-    font-size: 20px;
-    color: #3A7673;
-}
-.savingThrow {
-    width: 100%; 
-}
-.wrapper1 p {
-    padding: 0px 15px; 
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-size: 20px;
-    color: #3A7673;
-}
-.smallerImages {
-    position: relative; 
-    width: 100%; 
-    height: 50%; 
-}
-.smallerImages img {
-    height: 115px; 
-    padding: 10px;
-    width: 50%;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    border-radius: 18px;
-    float: left; 
-    box-shadow:
-        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-        0 12.5px 10px rgba(0, 0, 0, 0.06),
-        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-        0 100px 80px rgba(0, 0, 0, 0.12);
-      min-height: 25px;
-      width: 25vw;
-      margin: 25px auto;
-      background: white;
-      border-radius: 2px;
-}
-.caption {
-    display: block; 
-    background-color: #ECC19B; 
-    padding: 5px; 
-    font-family: 'PT Sans';
-    font-weight: bold;
-    font-size: 14px;
-}
-.userFlow, .DOEGroup, .siteMap, .styleGuide {
-    vertical-align: top; 
-    text-align: center; 
-    width: 50%;  
-    float: left; 
-    margin: 10px 0px; 
-    border: 1px solid black; 
-    background-color: #ECC19B;
-}
-/* Case Study Styles */
+/* Main Content */
 * {
     box-sizing: border-box;
 }
-.takeovertheworld .title3 {
+.heroSection {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+}
+.heroImg {
+    border: 2;
+    color: #ECC19B;
+    border-style: solid;
+    border-radius: 15px;
+}
+.title3 {
     font-family: 'Sen', sans-serif;
     font-size: 40px;
-    text-shadow: 2px 2px #000000;
-    font-weight: bolder;
-    color: #DC423C;
+    text-shadow: 2px 2px #ECC19B;
+    font-weight: normal;
+    color: #0D1D21;
     padding: 0px 0px; 
     position: relative;
     margin-right: 0px 0px 0px 0px;
@@ -163,11 +80,11 @@ hr {
     display: table;
 }
 .takeovertheworld p {
-    padding: 0px 15px; 
-    font-family: "PT Sans";
+    padding: 0px; 
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
-    font-size: 18px;
-    color: #3A7673;
+    font-size: 25px;
+    color: #0D1D21;
 }
 .codingCase, .lfpCase, .doeCase, .covidCase{
     position: relative;
@@ -306,20 +223,4 @@ hr {
 }
 .fa-phone-alt {
     margin: 5px;
-}
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-}
-@media only screen and (max-width: 768px) {
-    .content img {
-        width: 100%; 
-    }
-    .smallerImages img {
-        width: 100%; 
-        height: 100%; 
-    }
-    .userFlow, .DOEGroup, .siteMap, .styleGuide {
-        width: 100%; 
-    }
 }
