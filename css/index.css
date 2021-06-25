@@ -1,226 +1,135 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth; 
+}
+body {
+    padding-top: 20px;
+}
 /* <!-- Nav CSS --> */
-.container {
-    margin-right: 30px;
-    margin-left: 30px;
-}
-img {
-    border: 2;
-    color: #ECC19B;
-    border-style: solid;
-    border-radius: 10px;
-}
 #dropdownMenuLink {
     background-color: white;
     color: #0D1D21 !important;
     border-color: white;
-    align-items: center;
+    align-items: left !important;
     font-family: "Gill Sans",Helvetica,Arial,sans-serif;
 }
 #dropdownMenuLink:hover {
     background-color: #E5584C;
     color: white !important;
 }
+#hamburger {
+    display: none;
+}
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='1' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .navbar-nav > li {
-    padding-right: 20px;
+    padding-right: 10px;
     font-family: "Gill Sans",Helvetica,Arial,sans-serif;
     margin-left: 20px;
     margin-right: 20px;
 }
-#hamburger {
-    display: none; 
-}
 .btn-outline-success {
-    background-color: #E5584C;
+    background-color: white;
     border: none;
-    color: white;
+    color: #0D1D21;
     cursor: pointer;
     font-family: "Gill Sans",Helvetica,Arial,sans-serif;
     margin-left: 20px;
     margin-right: 20px;
 } 
 .btn-outline-success:hover {
-    background-color: #0D1D21;
+    background-color: #E5584C;
+    color: white;
 }
-/* Main Content */
-* {
-    box-sizing: border-box;
+/* Mobile Version of Nav */
+@media only screen and (max-width: 995px) {
+    #hamburger {
+        color: black !important;
+        padding: 15px;
+        margin-top: 100px;
+        right: 40px;
+        margin-right: 15px;
+        border-color: white;
+        border-width: 2px;
+    }    
 }
-.heroSection {
-    padding-top: 5rem;
-    padding-bottom: 6rem;
+/* <!-- About Me Section --> */
+.aboutMe {
+    display: flex;
+    min-height: 2000px;
 }
-.heroImg {
-    border: 2;
-    color: #ECC19B;
-    border-style: solid;
-    border-radius: 15px;
-}
-.title3 {
-    font-family: 'Sen', sans-serif;
-    font-size: 40px;
-    text-shadow: 2px 2px #ECC19B;
-    font-weight: normal;
-    color: #0D1D21;
-    padding: 0px 0px; 
+.aboutMe .portrait {
+    align-self: center;
     position: relative;
-    margin-right: 0px 0px 0px 0px;
+    z-index: 1;
 }
-.takeovertheworld {
-    margin-left: -5px;
-    margin-right: -5px;
+.aboutFlower img {
+    background-size: 200px !important;
+    position: absolute;
+    top: -50px;
+    left: -170px;
     height: auto; 
-    position: relative; 
+    z-index: 0;
+    animation: big-spin 120s linear infinite;
 }
-.takeovertheworld::after {
-    content: "";
-    clear: both;
-    display: table;
+@keyframes big-spin {
+    0% {transform: rotate(0deg);
+    }
+    100% {transform: rotate(360deg);
+    }
 }
-.takeovertheworld p {
-    padding: 0px; 
-    font-family: "PT Sans", sans-serif;
+.portrait img {
+    background: url(images/Image.png) center;
+    background-size: cover;
+    margin: 16px 0 0 16px;
+    height: auto;
+    position: absolute;
+    top: 270px;
+    left: 10px;
+    z-index: 1;
+    border: 3px solid #E5584C;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.description h1 {
+    position: absolute;
+    top: -180px;
+    width: 350px;
+    height: auto;
+    font-family: 'PT Sans', 'sans-serif';
     font-style: normal;
-    font-size: 25px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
     color: #0D1D21;
 }
-.codingCase, .lfpCase, .doeCase, .covidCase{
-    position: relative;
-    width: 50%;
-    padding-bottom: 10px;
+.description p {
+    position: absolute;
+    height: auto;
+    top: -120px;
+    width: 350px;
+    font-family: 'PT Sans', 'sans-serif';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 52px;
+    color: #0D1D21;
 }
-.covidCase:hover .text {
-    opacity: 1;
-}
-.doeCase:hover .text {
-    opacity: 1;
-}
-.lfpCase:hover .text {
-    opacity: 1;
-}
-.codingCase:hover .text {
-    opacity: 1;
-}
-.codingCase img, .lfpCase img, .doeCase img, .covidCase img {
-    display: block;
-    width: 100% !important;
-}
-.text {
-    position: absolute; 
-    bottom: 0; 
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 1.0); /* Black see-through */
-    color: #f1f1f1; 
-    width: 100%;
-    transition: .5s ease;
-    opacity:0;
+.button {
+    text-transform: uppercase;
+    font: 400 16px 'PT Sans', 'sans-serif';
+    letter-spacing: .075rem;
+    line-height: 1.5rem;
+    border: none;
+    border-radius: 100px;
     color: white;
-    font-size: 18px;
-    padding: 20px;
+    background-color: #E5584C;
+    cursor: pointer;
     text-align: center;
-}
-/* Scroll "Back to Top" Button Style */
-#myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 150px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #E5584C; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-  }
-  #myBtn:hover {
-    background-color: #0D1D21; /* Add a dark-grey background on hover */
-  }
-/* Footer Styles */
-.footer {
-    background-color: #709189;
-    position: relative;
-    bottom: 0;  
-    width: 100vw; 
-    left: 50%; 
-    right: 50%; 
-    margin-left: -50vw; 
-    margin-right: -50vw; 
-} 
-.wrapper {
-    height: 140px;
-    color: white;
-}
-.logo2 {
-    height: 90px; 
-    padding: 5px;
-    width: 150px;
-    object-fit: contain;
-    background-repeat: no-repeat;
-    background-position: left;
-    text-align: center;
-    margin-left: 40px;
-    position: absolute; 
-    left: 0px; 
-    bottom: 40px; 
-}
-.footerTitle {
-    font-size: 27px; 
-    padding-left: 40px;
-    word-spacing: 10px;
-    position: absolute; 
-    left: 10px; 
-    bottom: 0px; 
-    font-family: "PT Sans"; 
-}
-.socialMedia {
-    height: 65px; 
-    padding: 5px;
-    width: 65px;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    text-align: center;
-    margin-left: 40px;
-    display: block; 
-}
-.GitHub { 
-    position: absolute; 
-    bottom: 40px; 
-    right: 150px; 
-}
-.LinkedIn {
-    position: absolute; 
-    bottom: 40px; 
-    right: 80px; 
-}
-.FaceBook {
-    position: absolute; 
-    bottom: 40px; 
-    right: 10px; 
-}
-#copyright {
-    position: absolute; 
-    bottom: 10px; 
-    right: 5px; 
-    font-size: 12px;
-}
-.links {
-    color: white;
-    font-size: 18px;
-}
-.textLinks {
-    padding: 0px 0px; 
-    position: absolute; 
-    left: 200px; 
-    bottom: 50px; 
-}
-.fa-envelope {
-    margin: 5px;
-}
-.fa-phone-alt {
-    margin: 5px;
+    max-width: 360px;
+    width: 150%;
 }

@@ -5,28 +5,34 @@
     <meta charset="utf-8 SH Portfolio Homepage">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-    <!-- CSS Kits -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="css/index.css" type="text/css" rel="stylesheet">
+    <!--Bootstrap Kit-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
+    <link rel="stylesheet" href="https://use.typekit.net/tiw0cxw.css">
+
+    <!--CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!--Fonts CSS Kits-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/xem7dmp.css">
-    <!-- <link rel="stylesheet" href="https://use.typekit.net/xem7dmp.css">
-    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@800&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@800&display=swap" rel="stylesheet">
 
-    <!--JavaScript-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="JS/script.js"></script>
+    <!--JavaScript Kits-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b031701895.js" crossorigin="anonymous"></script>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
     <!-- Hotjar Tracking Code for https://srhembree.github.io/UX_UI_HW_19/ -->
     <script>
@@ -46,169 +52,94 @@
         <div class="row">
             <div class="col-md-12">
                 <!-- Nav HTML -->
-                <nav class="navbar navbar-expand-lg navbar-custom">
-                    <a class="navbar-brand" href="">
-                        <img src="../Portfolio_Home/images/Personal Logo.png" width="110" height="75"
-                            alt="Sydney Hembree logo">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" onclick="myFunction()">
-                        <!-- data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" -->
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="dropdown show shadow-sm rounded">
-                                <a class="btn btn-secondary dropdown-toggle" href="#" id="dropdownMenuLink"
-                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Work
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="#">COVID-Crushers Mobile App</a>
-                                    <a class="dropdown-item" href="#">Department of Energy UI Redesign</a>
-                                    <a class="dropdown-item" href="#">Little Five Points Center Redesign</a>
-                                    <a class="dropdown-item" href="#">Streams of Sound FE Development</a>
-                                    <a class="dropdown-item" href="#">Daily UI Challenges</a>
-                                </div>
-                            </li>
-                            <li class="dropdown show shadow-sm rounded">
-                                <a class="btn btn-secondary dropdown-toggle" href="#" id="dropdownMenuLink"
-                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Play
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Photography</a>
-                                    <a class="dropdown-item" href="#">Illustrations</a>
-                                </div>
-                            </li>
-                            <li class="navbar-btn shadow-sm rounded" id="dropdownMenuLink">
-                                <a class="nav-link" id="dropdownMenuLink" href="#">About</a>
-                            </li>
-                            <form class="form-inline shadow-sm rounded" method="get" action="images/Resume2021.pdf">
-                                <button class="btn btn-outline-success"><i class="fa fa-download"
-                                        href="../Portfolio_Home/images/Resume2021.pdf"></i>Resume</button>
-                            </form>
-                        </ul>
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-expand-md navbar-light navbar-custom fixed-top">
+                            <a class="navbar-brand" href="">
+                                <img src="../Portfolio_Home/images/Personal Logo.png" width="110" height="75"
+                                    alt="Sydney Hembree personal logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" onclick="myFunction()">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarCollapse">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="dropdown show rounded">
+                                        <a class="btn btn-secondary dropdown-toggle" href="#" id="dropdownMenuLink"
+                                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Work
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">COVID-Crushers Mobile App</a>
+                                            <a class="dropdown-item" href="#">Department of Energy UI Redesign</a>
+                                            <a class="dropdown-item" href="#">Little Five Points Center Redesign</a>
+                                            <a class="dropdown-item" href="#">Streams of Sound FE Development</a>
+                                            <a class="dropdown-item" href="#">Daily UI Challenges</a>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown show rounded">
+                                        <a class="btn btn-secondary dropdown-toggle" href="#" id="dropdownMenuLink"
+                                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Play
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Photography</a>
+                                            <a class="dropdown-item" href="#">Illustrations</a>
+                                        </div>
+                                    </li>
+                                    <li class="form-inline rounded" id="dropdownMenuLink">
+                                        <a style="padding-left: 1rem; padding-right: 1rem;" id="dropdownMenuLink"
+                                            role="button" href="#">About</a>
+                                    </li>
+                                    <form class="form-inline rounded" method="get" action="images/Resume2021.pdf">
+                                        <button class="btn btn-outline-success"
+                                            href="../Portfolio_Home/images/Resume2021.pdf">Resume</button>
+                                    </form>
+                                </ul>
+                            </div>
+                            <div class="hamburgerDisplay" id="hamburger">
+                                <ul class="hamburgerSection">
+                                    <li class="hamburgerEntry">
+                                        <a href="#">Work</a>
+                                    </li>
+                                    <li class="hamburgerEntry">
+                                        <a href="#">Play</a>
+                                    </li>
+                                    <li class="hamburgerEntry">
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li class="hamburgerEntry">
+                                        <a href="#">Resume</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
                     </div>
-                    <div class="hamburgerDisplay" id="hamburger">
-                        <ul class="hamburgerSection">
-                            <li class="hamburgerEntry">
-                                <a href="#">Work</a>
-                            </li>
-                            <li class="hamburgerEntry">
-                                <a href="#">Play</a>
-                            </li>
-                            <li class="hamburgerEntry">
-                                <a href="#">About</a>
-                            </li>
-                            <li class="hamburgerEntry">
-                                <a href="#">Resume</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+                </div>
                 <br>
                 <!-- Title Section Home -->
-                <div class="row heroSection">
-                    <div class="col-md-6">
-                        <div class="card heroImg">
-                            <img src="../Portfolio_Home/images/Image.png">
+                <section class="aboutMe row">
+                    <div class="portraitContainer col-md-6">
+                        <div class="portrait">
+                            <img src="images/Image.png" alt="Portrait of Sydney Hembree" style="width: 70%;">
+                        </div>
+                        <div class="flowerContainer">
+                            <div class="aboutFlower">
+                                <img src="images/Flower.png" alt="Rotating Flower" style="width: 150%;">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 takeovertheworld">
-                        <h1 class="title3">Hi there, I'm Sydney</h1>
-                        <p>I'm a UX/UI Designer with over two years of experience building digital products
-                            for nonprofits with the goal of resonating with their clientele. My specialties
-                            include user research and wireframing.
+                    <div class="description col-md-6">
+                        <h1>Hi there, I'm Sydney!
+                        </h1>
+                        <p>I'm a UX/UI Designer with over two years of experience building digital
+                            products for nonprofits with the goal of resonating with their clientele.
                         </p>
+                        <a class="button" href="mailto:hembree.sydney9@gmail.com">Email Me</a>
                     </div>
-                </div>
-                <br>
-                <!-- Case Studies HTML -->
-                <div class="row">
-                    <div class="col">
-                        <div class="takeovertheworld">
-                            <h1 class="title3">Case Studies
-                            </h1>
-                            <p>Using Agile techniques and design methodologies,
-                                our teams took on academic and real-world UX
-                                problems, which resulted in a better understanding
-                                of user pain points, design interactions, and how
-                                best to serve both the client and the user.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 covidCase">
-                        <div class="card card-img-top img-fluid">
-                            <a href=""><img src="../Portfolio_Home/images/Covid Crushers.png"></a>
-                            <div class="text">
-                                COVID Crushers Mobile Notification App
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 doeCase">
-                        <div class="card card-img-top img-fluid">
-                            <a href=""><img src="../Portfolio_Home/images/DOE.png"></a>
-                            <div class="text">
-                                Department of Energy RWD Redesign
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 lfpCase">
-                        <div class="card card-img-top img-fluid">
-                            <a href=""><img src="../Portfolio_Home/images/L5PCAC.png"></a>
-                            <div class="text">
-                                Little Five Points Center RWD Redesign
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 codingCase">
-                        <div class="card card-img-top img-fluid">
-                            <a href=""><img src="../Portfolio_Home/images/Coding.png" alt="Streams of Sound product"
-                                    class="image"></a>
-                            <div class="text">
-                                Streams of Sound UX/UI/FE Development & Redesign
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Scrolling Feature HTML -->
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button>
-    </div>
-    <!-- Footer HTML -->
-    <div class="footer">
-        <div class="wrapper">
-            <div>
-                <img class="logo2" src="../Portfolio_Home/images/Personal Logo.png">
-            </div>
-            <div class="textLinks">
-                <i class="fas fa-envelope"></i>
-                <!-- <p>hembree.sydney9@gmail.com</p> -->
-                <a class="links" href="mailto:hembree.sydney9@gmail.com">
-                    hembree.sydney9@gmail.com</a>
-                <br>
-                <i class="fas fa-phone-alt"></i>
-                <a class="links" href="tel:+16784626556">
-                    +1 678-462-6556
-                </a>
-            </div>
-            <div>
-                <img class="socialMedia GitHub" src="../Portfolio_Home/images/githubIcon.png">
-            </div>
-            <div>
-                <img class="socialMedia LinkedIn" src="../Portfolio_Home/images/linkedinIcon.png">
-            </div>
-            <div>
-                <img class="socialMedia FaceBook" src="../Portfolio_Home/images/facebookIcon.png">
-            </div>
-            <div>
-                <h1 class="footerTitle"> Let's chat!</h1>
-            </div>
-            <div>
-                <footer id="copyright">&copy;Sydney Hembree 2021 - All Rights Reserved</footer>
+                </section>
             </div>
         </div>
     </div>
