@@ -1000,8 +1000,8 @@ h3 {
 }
 .protoVisuals1 img {
     margin: auto; 
-    height: 80%;
-    max-width: 80%;
+    height: 100%;
+    max-width: 100%;
     border: 3;
     color: #E5584C;
     border-style: solid;
@@ -1009,22 +1009,24 @@ h3 {
     z-index: 1;
 }
 .projectLinks {
-    background-color: #E5584C;
-    color: white;
+    background-color: white;
+    color: #E5584C;
     font-family: 'pt-sans', sans-serif;
     font-style: normal;
     font-size: 20px;
     padding-left: 10%;
-    margin-left: 30%;
     padding-right: 10%;
     padding-bottom: 5px;
     padding-top: 5px;
-    border: none;
+    border-color: #E5584C;
+    border-width: 3px;
 }
 .projectLinks:hover {
     background-color: #E5584C;
     color: white;
     font-style: bold;
+    border-color: #E5584C;
+    border-width: 3px;
 }
 .card {
     border: none;
@@ -1048,10 +1050,10 @@ h3 {
     font-family: 'pt-sans', sans-serif;
     font-style: normal;
     font-size: 20px;
-    padding-left: 5%;
-    margin-left: 30%;
-    padding-right: 5%;
-    margin-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+    padding-top: 5px;
     border: none;
 }
 .projectLink:hover {
