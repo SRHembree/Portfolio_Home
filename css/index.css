@@ -30,7 +30,7 @@
         color: white;
     }
     .socials:hover {
-        color: #E5584C;
+        color: #b6a7c1;
     }
     .icon-background {
         color: #686868;
@@ -85,7 +85,7 @@ filter: drop-shadow(2px 2px 0 white)
         color: white;
     }
     .socials:hover {
-        color: #E5584C;
+        color: #b6a7c1;
     }
     .icon-background {
         color: #686868;
@@ -151,7 +151,7 @@ filter: drop-shadow(2px 2px 0 white)
         color: white;
     }
     .socials:hover {
-        color: #E5584C;
+        color: #b6a7c1;
     }
     .icon-background {
         color: #686868;
@@ -215,7 +215,7 @@ filter: drop-shadow(2px 2px 0 white)
         color: white;
     }
     .socials:hover {
-        color: #E5584C;
+        color: #b6a7c1;
     }
     .icon-background {
         color: #686868;
@@ -246,11 +246,11 @@ filter: drop-shadow(2px 2px 0 white)
         border-color: white;
         align-items: left !important;
         font-family: "Gill Sans",Helvetica,Arial,sans-serif;
-        border-color: #E5584C !important;
+        border-color: #b6a7c1 !important;
         border-width: 2px;
     }
     #dropdownMenuLink:hover {
-        background-color: #E5584C;
+        background-color: #754eb8;
         color: white !important;
     }
     .navbar {
@@ -294,7 +294,7 @@ html {
     font-family: "Gill Sans",Helvetica,Arial,sans-serif;
 }
 #dropdownMenuLink:hover {
-    background-color: #E5584C;
+    background-color: #754eb8;
     color: white !important;
 }
 .navbar {
@@ -313,7 +313,7 @@ hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 0;
-    border-top: 1px solid #DC423C;
+    border-top: 1px solid #8c75b5;
 }
 h1, h2 {
     color: #0D1D21;
@@ -351,7 +351,7 @@ h3 {
 }
 .projectLinks {
     background-color: white;
-    color: #E5584C;
+    color: #754eb8;
     font-family: 'pt-sans', sans-serif;
     font-style: normal;
     font-size: 20px;
@@ -359,14 +359,14 @@ h3 {
     padding-right: 10%;
     padding-bottom: 5px;
     padding-top: 5px;
-    border-color: #E5584C;
+    border-color: #754eb8;
     border-width: 3px;
 }
 .projectLinks:hover {
-    background-color: #E5584C;
+    background-color: #754eb8;
     color: white;
     font-style: bold;
-    border-color: #E5584C;
+    border-color: #754eb8;
     border-width: 3px;
 }
 .card {
@@ -398,7 +398,7 @@ h3 {
     border: none;
 }
 .projectLink:hover {
-    background-color: #E5584C;
+    background-color: #754eb8;
     color: white;
     font-style: bold;
 }
